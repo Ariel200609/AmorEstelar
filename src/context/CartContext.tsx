@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, type ReactNode } from 'react';
 
 export interface Product {
   id: number;
@@ -26,6 +26,7 @@ interface CartContextType {
   getCartItemsCount: () => number;
   isCartOpen: boolean;
   setIsCartOpen: (open: boolean) => void;
+  openCart: () => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -104,6 +105,10 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     }
   };
 
+  const openCart = () => {
+    setIsCartOpen(true);
+  };
+
   const getCartTotal = () => {
     try {
       return cartItems.reduce((total, item) => total + (item.product.price * item.quantity), 0);
@@ -132,6 +137,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     getCartItemsCount,
     isCartOpen,
     setIsCartOpen,
+    openCart,
   };
 
   return (

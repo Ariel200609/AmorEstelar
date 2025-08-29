@@ -1,143 +1,136 @@
-# 🌟 Amor Estelar - Landing Page
+# 💜 Amor Estelar - Tienda Online
 
-Una landing page ultra moderna y estética para el emprendimiento "Amor Estelar", especializado en diseño gráfico, impresión y personalización de recuerdos románticos.
+> **Imprimimos y personalizamos tus recuerdos 💗**
 
-## ✨ Características
+Una tienda online moderna y elegante para **Amor Estelar**, especializada en diseño gráfico, impresión y personalización de recuerdos.
 
-- **Diseño Ultra Moderno**: Interfaz minimalista con estilo romántico y creativo
-- **Animaciones Fluidas**: Implementado con Framer Motion para experiencias visuales cautivadoras
-- **Responsive Design**: Optimizado para todos los dispositivos (desktop, tablet, móvil)
-- **Paleta de Colores Romántica**: Gradientes personalizados con tonos púrpura, rosa y lavanda
-- **Componentes Interactivos**: Cards animadas, carrusel de testimonios, botones con efectos hover
+## 🌟 Características
 
-## 🎨 Paleta de Colores
+- ✨ **Diseño moderno** con animaciones fluidas
+- 🛍️ **Carrito de compras** funcional
+- 📱 **Checkout por WhatsApp** automático
+- 🎯 **20 productos** organizados por categorías
+- 🎨 **Paleta de colores romántica** personalizada
+- 📱 **Responsive design** para móviles y desktop
 
-- `#A66CF5` - Púrpura principal
-- `#F571E2` - Rosa vibrante
-- `#D36CF5` - Lavanda
-- `#796CF5` - Índigo
-- `#F56C8E` - Rosa suave
-- `#E7BDF5` - Lavanda claro
+## 🛒 Productos Disponibles
 
-## 🏗️ Estructura del Sitio
+### 📸 Polaroids
+- Polaroid Iman-Souvenir
+- Polaroid 8x5
+- Polaroid clásicas 10x10
+- Polar square 9x8
 
-### 🚀 Hero Section
-- Fondo con gradiente romántico y elementos decorativos animados
-- Título principal con tipografía elegante
-- Subtítulo con mensaje del emprendimiento
-- Botones CTA con animaciones hover
-- Indicador de scroll animado
+### 🖼️ Cuadros
+- Cuadros decorativos personalizados
+- Cuadros del Día de la Madre/Padre
+- Cuadros con mapas del cielo
+- Cuadros XXL y XL
 
-### 🛠️ Sección "Lo que hacemos"
-- Grilla de servicios con íconos animados
-- Diseño gráfico, impresión personalizada, polaroids, mapas del amor
-- Cards con efectos hover y animaciones de entrada
+### 🏷️ Stickers
+- Kit de stickers A4
 
-### 🎭 Sección "Elige tu estilo"
-- Tabs interactivos para polaroids y mapas
-- Cards de productos con imágenes y efectos hover
-- Animaciones de transición suaves entre categorías
+### ✨ Otros
+- BOX personalizables
+- Porta retratos premium
+- Calendarios por mayor
+- Productos clásicos
 
-### 💬 Testimonios de Clientes
-- Carrusel automático con controles manuales
-- Testimonios reales con fotos y calificaciones
-- Navegación con puntos indicadores
-- Animaciones de entrada y salida
+## 🚀 Deploy en GitHub Pages
 
-### 📞 Sección de Contacto
-- Botones directos a WhatsApp y Gmail
-- Información de ubicación (Bahía Blanca)
-- Formulario visual con información requerida
-- Fondo con gradiente y elementos decorativos
+### Opción 1: Deploy Automático (Recomendado)
 
-### 🦶 Footer
-- Información completa del emprendimiento
-- Enlaces a redes sociales (Instagram, Facebook)
-- Servicios listados
-- Elementos decorativos animados
-
-## 🛠️ Tecnologías Utilizadas
-
-- **React 18** - Biblioteca de interfaz de usuario
-- **TypeScript** - Tipado estático para JavaScript
-- **Vite** - Herramienta de desarrollo rápida
-- **TailwindCSS** - Framework de CSS utilitario
-- **Framer Motion** - Biblioteca de animaciones para React
-- **React Icons** - Iconos SVG como componentes de React
-
-## 🚀 Instalación y Uso
-
-1. **Clonar el repositorio**
+1. **Sube tu código a GitHub:**
    ```bash
-   git clone <url-del-repositorio>
-   cd AmorEstelar
+   git add .
+   git commit -m "Deploy Amor Estelar store"
+   git push origin main
    ```
 
-2. **Instalar dependencias**
-   ```bash
-   npm install
-   ```
+2. **Habilita GitHub Pages:**
+   - Ve a tu repositorio en GitHub
+   - Settings → Pages
+   - Source: "GitHub Actions"
 
-3. **Ejecutar en modo desarrollo**
-   ```bash
-   npm run dev
-   ```
+3. **¡Listo!** Tu sitio se desplegará automáticamente en:
+   `https://TU_USUARIO.github.io/AmorEstelar`
 
-4. **Construir para producción**
-   ```bash
-   npm run build
-   ```
+### Opción 2: Deploy Manual
 
-5. **Previsualizar la build de producción**
-   ```bash
-   npm run preview
-   ```
+```bash
+# Construir el proyecto
+npm run build
 
-## 📱 Responsive Design
+# Desplegar a GitHub Pages
+npm run deploy
+```
 
-El sitio está completamente optimizado para:
-- **Desktop** (1200px+): Layout completo con todas las animaciones
-- **Tablet** (768px - 1199px): Grillas adaptadas y espaciado optimizado
-- **Móvil** (< 768px): Diseño vertical con navegación táctil
+## 🛠️ Desarrollo Local
 
-## 🎯 Funcionalidades Interactivas
+### Prerrequisitos
+- Node.js 18+
+- npm
 
-- **Scroll suave** entre secciones
-- **Animaciones on-scroll** con Intersection Observer
-- **Carrusel automático** de testimonios
-- **Tabs dinámicos** en la sección de estilos
-- **Enlaces directos** a WhatsApp y Gmail
-- **Efectos hover** en todos los elementos interactivos
+### Instalación
+```bash
+# Clonar repositorio
+git clone https://github.com/TU_USUARIO/AmorEstelar.git
+cd AmorEstelar
 
-## 📝 Personalización
+# Instalar dependencias
+npm install
 
-Para personalizar el contenido:
+# Ejecutar en desarrollo
+npm run dev
+```
 
-1. **Datos de contacto**: Editar `ContactSection.tsx`
-   - Número de WhatsApp
-   - Dirección de email
-   - Ubicación
+### Scripts Disponibles
 
-2. **Redes sociales**: Actualizar `Footer.tsx`
-   - URLs de Instagram y Facebook
+```bash
+npm run dev      # Servidor de desarrollo
+npm run build    # Construir para producción
+npm run preview  # Vista previa de producción
+npm run deploy   # Desplegar a GitHub Pages
+npm run lint     # Verificar código
+```
 
-3. **Contenido**: Modificar textos en cada componente según necesidades
+## 🎨 Tecnologías Utilizadas
 
-## 🌟 Características Especiales
+- **Frontend:** React 18 + TypeScript
+- **Bundler:** Vite
+- **Estilos:** TailwindCSS
+- **Animaciones:** Framer Motion
+- **Íconos:** React Icons
+- **Deploy:** GitHub Pages + GitHub Actions
 
-- **Elementos decorativos animados** (corazones, estrellas, sparkles)
-- **Gradientes personalizados** con la paleta de colores del emprendimiento
-- **Scrollbar personalizada** con colores de la marca
-- **Tipografía Inter** para máxima legibilidad
-- **Efectos de glass morphism** en cards y overlays
-- **Micro-animaciones** para mejorar la experiencia de usuario
+## 📱 Contacto
 
-## 📞 Contacto del Emprendimiento
+- **WhatsApp:** [+54 291 527 7900](https://wa.me/5492915277900)
+- **Instagram:** [@amor.estelar.lp](https://instagram.com/amor.estelar.lp)
+- **Ubicación:** Bahía Blanca, zona centro – Pedro Luro
 
-- **WhatsApp**: Enlace directo con mensaje predefinido
-- **Gmail**: Formulario de contacto con asunto y cuerpo
-- **Ubicación**: Bahía Blanca, zona centro - Pedro Luro
+## 🎯 Funcionalidades
+
+### 🛍️ Carrito de Compras
+- Agregar/quitar productos
+- Ajustar cantidades
+- Personalización de productos
+- Cálculo automático de totales
+
+### 📱 Checkout por WhatsApp
+- Mensaje automático con:
+  - Lista de productos seleccionados
+  - Cantidades y precios
+  - Total del pedido
+  - Personalizaciones especiales
+
+### 🎨 Filtros de Productos
+- Todos los productos
+- Por categoría (Polaroids, Cuadros, Stickers, Otros)
+- Productos destacados
 
 ---
 
-Desarrollado con 💜 para **Amor Estelar** - Imprimimos y personalizamos tus recuerdos 💗
+**💜 Hecho con amor para Amor Estelar**
+
+*Imprimimos y personalizamos tus recuerdos 💗*

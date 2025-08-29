@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiHeart, FiShoppingCart, FiStar, FiX, FiPlus } from 'react-icons/fi';
+import { FiShoppingCart, FiStar, FiX, FiPlus } from 'react-icons/fi';
 import { HiSparkles } from 'react-icons/hi';
 import { useCart } from '../context/CartContext';
 
@@ -16,15 +16,14 @@ interface Product {
 
 interface ProductCardProps {
   product: Product;
-  index: number;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
   const [showModal, setShowModal] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [customization, setCustomization] = useState('');
-  const [isLiked, setIsLiked] = useState(false);
+
 
   const handleAddToCart = () => {
     try {
@@ -68,12 +67,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: index * 0.1 }}
-        viewport={{ once: true }}
-        whileHover={{ y: -8, scale: 1.02 }}
-        className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+        whileHover={{ y: -4, scale: 1.01 }}
+        transition={{ duration: 0.3 }}
+        className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
       >
         {/* Badge de categoría */}
         <div className={`absolute top-4 left-4 bg-gradient-to-r ${getCategoryColor()} text-white px-3 py-1 rounded-full text-xs font-semibold z-10`}>

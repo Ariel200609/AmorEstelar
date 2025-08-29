@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiHeart, FiStar, FiCamera, FiMail } from 'react-icons/fi';
 import { HiSparkles } from 'react-icons/hi';
-import heroImage from '../assets/images/hero/Hero.jpg';
-import logoAmorEstelar from '../assets/images/logo/logoAmorEstelar.jpg';
+import heroImage from '../assets/images/hero/Hero.webp';
+import logoAmorEstelar from '../assets/images/logo/logoAmorEstelar.webp';
 
 const HeroSection: React.FC = () => {
   const whatsappNumber = "5492915277900";

@@ -9,25 +9,24 @@ export interface Product {
 }
 
 // Importar imágenes de productos
-import img1 from '../assets/images/productos/CuadroDecoSouvenirs.jpg';
-import img2 from '../assets/images/productos/deco.jpg';
-import img3 from '../assets/images/productos/c.jpg';
-import img4 from '../assets/images/productos/1.jpg';
-import img5 from '../assets/images/productos/2.jpg';
-import img6 from '../assets/images/productos/3.jpg';
-import img7 from '../assets/images/productos/4.jpg';
-import img8 from '../assets/images/productos/5.jpg';
-import img9 from '../assets/images/productos/6.jpg';
-import img10 from '../assets/images/productos/7.jpg';
-import nenita from '../assets/images/productos/nenita.jpg';
-import img12 from '../assets/images/productos/9.jpg';
-import img13 from '../assets/images/productos/10.jpg';
-import img14 from '../assets/images/productos/11.jpg';
-import img15 from '../assets/images/productos/12.jpg';
-import img16 from '../assets/images/productos/13.jpg';
-import img17 from '../assets/images/productos/14.jpg';
-import img18 from '../assets/images/productos/15.jpg';
-import mama from '../assets/images/productos/mama.jpg';
+import img1 from '../assets/images/productos/CuadroDecoSouvenirs.webp';
+import img3 from '../assets/images/productos/c.webp';
+import img4 from '../assets/images/productos/1.webp';
+import img5 from '../assets/images/productos/2.webp';
+import img6 from '../assets/images/productos/3.webp';
+import img7 from '../assets/images/productos/4.webp';
+import img8 from '../assets/images/productos/5.webp';
+import img9 from '../assets/images/productos/6.webp';
+import img10 from '../assets/images/productos/7.webp';
+import nenita from '../assets/images/productos/nenita.webp';
+import img12 from '../assets/images/productos/9.webp';
+import img13 from '../assets/images/productos/10.webp';
+import img14 from '../assets/images/productos/11.webp';
+import img15 from '../assets/images/productos/12.webp';
+import img16 from '../assets/images/productos/13.webp';
+import img17 from '../assets/images/productos/14.webp';
+import img18 from '../assets/images/productos/15.webp';
+import mama from '../assets/images/productos/mama.webp';
 
 
 export const products: Product[] = [
@@ -46,7 +45,7 @@ export const products: Product[] = [
     name: "Cuadro",
     category: "cuadros",
     price: 8500,
-    image: img2,
+    image: nenita,
     description: "Ideal para souvenires de boda, cumpleaños, etc.",
     featured: true
   },

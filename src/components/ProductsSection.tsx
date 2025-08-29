@@ -28,13 +28,7 @@ const ProductsSection: React.FC = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
             Nuestros <span className="bg-gradient-romantic bg-clip-text text-transparent">Productos</span>
           </h2>
@@ -78,26 +72,18 @@ const ProductsSection: React.FC = () => {
               </motion.button>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Grid de productos */}
-        <motion.div
-          layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
         >
-          {getFilteredProducts().map((product, index) => (
-            <ProductCard key={product.id} product={product} index={index} />
+          {getFilteredProducts().map((product) => (
+            <ProductCard key={product.id} product={product} />
           ))}
-        </motion.div>
+        </div>
 
         {/* CTA al final */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
+        <div className="text-center mt-16">
           <div className="bg-white rounded-3xl p-8 shadow-xl max-w-2xl mx-auto">
             <motion.div
               animate={{ 
@@ -129,7 +115,7 @@ const ProductsSection: React.FC = () => {
               Solicitar diseño personalizado
             </motion.button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

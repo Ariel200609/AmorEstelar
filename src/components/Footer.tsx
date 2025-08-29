@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FiHeart, FiInstagram, FiMapPin, FiMail, FiMessageCircle } from 'react-icons/fi';
 import { FaFacebook } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
-import logoAmorEstelar from '../assets/images/logo/logoAmorEstelar.jpg';
+import logoAmorEstelar from '../assets/images/logo/logoAmorEstelar.webp';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
