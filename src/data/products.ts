@@ -27,6 +27,7 @@ import img16 from '../assets/images/productos/13.webp';
 import img17 from '../assets/images/productos/14.webp';
 import img18 from '../assets/images/productos/15.webp';
 import mama from '../assets/images/productos/mama.webp';
+import img19 from '../assets/images/productos/stickers.webp';
 
 
 export const products: Product[] = [
@@ -53,17 +54,17 @@ export const products: Product[] = [
     id: 3,
     name: "Tu Historia en Fotos",
     category: "cuadros",
-    price: 13000,
+    price: 13500,
     image: img3,
     description: "Personaliza tu cuadro con fotos de tus recuerdos"
   },
   {
     id: 4,
-    name: "Polaroid Iman-Souvenir",
+    name: "Polaroid Iman-Souvenir,6 unidades",
     category: "polaroids",
     price: 4800,
     image: img4,
-    description: "Diseño artístico único con elementos creativos y colores vibrantes."
+    description: "Se hace precio por mayor!"
   },
   {
     id: 5,
@@ -75,11 +76,11 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: "Polaroid 8x5",
+    name: "Polaroid 8x5, 12 unidades",
     category: "polaroids",
-    price: 400,
+    price: 4400,
     image: img6,
-    description: "Ideal para colocar atrás de la funda de tu celular",
+    description: "Llevando mas cantidad el precio es menor!",
     featured: true
   },
   {
@@ -147,7 +148,7 @@ export const products: Product[] = [
     id: 14,
     name: "Cuadro Deco XL",
     category: "cuadros",
-    price: 12000,
+    price: 13000,
     image: img12,
     description: "Cuadro con el mapa del cielo de tu fecha especial. Tamaño 30x40cm.",
     featured: true
@@ -180,7 +181,7 @@ export const products: Product[] = [
     id: 18,
     name: "Porta Retrato Premium",
     category: "otros",
-    price: 2000,
+    price: 0,
     image: img16,
     description: "portaretrato a elección"
   },
@@ -200,6 +201,14 @@ export const products: Product[] = [
     image: img18, // Reutilizando primera imagen
     description: "todo tipo de medida!!",
     featured: true
+  },
+  {
+    id: 21,
+    name: "Kit emprendedores - Pack de 24 y 35 unidades",
+    category: "stickers",
+    price: 3400,
+    image: img19,
+    description: "Stickers redondos de 4 y 4,5 cm de diámetro"
   }
 ];
 
